@@ -10,6 +10,10 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
+            Student student = new Student();
+            student.FullName = "John";
+            student.Name = "Jake";
+            student.Grades;
 
         }
     }
