@@ -8,9 +8,9 @@ namespace ConsoleApp1
 {
     class Student : IStudent
     {
-        int[] arr;
-        int count = 0;
-        int size = 20;
+        private int[] arr;
+        private int count = 0;
+        private int size = 20;
         public string Name
         {
             get; set;
