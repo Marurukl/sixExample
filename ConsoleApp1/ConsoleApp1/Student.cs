@@ -50,12 +50,14 @@ namespace ConsoleApp1
 
         public string GetFullName()
         {
-            throw new NotImplementedException();
+            Console.WriteLine(FullName);
+            return FullName;
         }
 
         public string GetName()
         {
-            throw new NotImplementedException();
+            Console.WriteLine(Name);
+            return Name;
         }
     }
 }
