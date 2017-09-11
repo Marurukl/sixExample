@@ -9,7 +9,7 @@ namespace ConsoleApp2
     class House
     {
         private List<IPart> houseParts;
-        public void  SetHouseParts()
+        public House()
         {
             houseParts = new List<IPart>();
             houseParts.Add(new Basement());
@@ -27,6 +27,10 @@ namespace ConsoleApp2
         public List<IPart> GetHouseParts()
         {
             return houseParts;
+        }
+        public int GetHouseCount()
+        {
+            return houseParts.Count;
         }
         public IPart this[int index]
         {

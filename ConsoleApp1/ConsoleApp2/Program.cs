@@ -10,6 +10,16 @@ namespace ConsoleApp2
     {
         static void Main(string[] args)
         {
+            Team team = new Team();
+            House house = new House();
+            int operationForHome = (house.GetHouseCount() / team.GetWorkerCount());
+            for (int i=0;i < operationForHome ; i++)
+            {
+                Console.WriteLine("_________________________________");
+                team.BuildHouse(house.GetHouseParts());
+                Console.WriteLine("  ");
+            }
+            Console.ReadLine();
         }
     }
 }
